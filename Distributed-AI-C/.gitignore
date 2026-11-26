@@ -1,0 +1,5 @@
+/trainer
+/model.txt
+/model.txt.tmp
+/results/*.log
+/results/model_*.txt
