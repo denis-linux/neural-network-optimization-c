@@ -1,0 +1,76 @@
+# Sequential regression scenarios, not an independent generalization benchmark.
+/reset	RESET
+сколько осталось	CLARIFY
+сколько осталось ккал	MISSING_GOAL
+моя цель 2000 ккал	GOAL	2000
+я съел 300 ккал	MEAL	300
+обед 500 ккал	MEAL	500
+сколько осталось	REMAINING	1200
+нет, там было 400	CORRECTED	500 -> 400
+сколько осталось	REMAINING	1300
+не 300 а 200 ккал	CONFLICT
+сколько осталось	REMAINING	1300
+не 400 а 200 ккал	CORRECTED	400 -> 200
+итого	TOTAL	500
+исправь цель на 1800 ккал	CORRECTED	2000 -> 1800
+сколько до лимита	REMAINING	1300
+не добавляй 200 ккал	NEGATED
+если я съел 600 ккал	CLARIFY
+я съел -200 ккал	CLARIFY
+я съел 20.5 ккал	CLARIFY
+я съел 20,5 ккал	CLARIFY
+я съел 1000001 ккал	CLARIFY
+я съел 1 2 3 ккал	CLARIFY
+я съел 300	CLARIFY
+я съел 300 ккал и 200 ккал	CLARIFY
+итого	TOTAL	500
+отмени последнее	CANCELLED
+итого	TOTAL	300
+поставь таймер	ASK_DURATION
+на 10 минут	TIMER	600 секунд
+сколько осталось	UNSUPPORTED
+сколько осталось калорий	REMAINING	1500
+отмени таймер	CANCELLED
+поставь таймер	ASK_DURATION
+отмени	CANCELLED
+на 10 минут	UNKNOWN
+таймер на 0 минут	CLARIFY
+таймер на 10	CLARIFY
+таймер на 2 минуты и 30 секунд	CLARIFY
+не ставь таймер на 10 минут	NEGATED
+таймер на 12 секунд	TIMER	12 секунд
+таймер на 2 минуты	TIMER	120 секунд
+отмени таймер	CLARIFY
+/reset	RESET
+итого ккал	TOTAL	0
+цель 100 ккал	GOAL
+ужин 130 ккал	MEAL
+сколько осталось	REMAINING	превышена на 30
+/reset	RESET
+у кого ключ?	UNKNOWN_FACT
+ключ у анна	FACT
+передай ключ от анна к борис	TRANSFER
+передай его от борис к вера	TRANSFER
+у кого ключ?	OWNER	вера
+передай ключ от борис к оля	CONFLICT
+у кого ключ?	OWNER	вера
+ключ у борис	CONFLICT
+передай телефон от иван к оля	UNKNOWN_FACT
+книга у иван	FACT
+у кого книга?	OWNER	иван
+у кого ключ?	OWNER	вера
+не передай ключ от вера к оля	NEGATED
+у кого ключ?	OWNER	вера
+/reset	RESET
+передай его от иван к оля	CLARIFY
+у кого ключ?	UNKNOWN_FACT
+привет	HELLO
+расскажи про космос	UNKNOWN
+поставь таймер на 5 минут и запиши 300 ккал	CLARIFY
+/reset	RESET
+моя ЦЕЛЬ 2345 ККАЛ	GOAL	2345
+я СЪЕЛ 123 ккал	MEAL	123
+сколько осталось	REMAINING	2222
+нет было 111	CORRECTED	123 -> 111
+сколько осталось	REMAINING	2234
+/reset	RESET

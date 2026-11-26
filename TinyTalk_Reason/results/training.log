@@ -1,0 +1,13 @@
+examples=225 answers=11 previous_epochs=0 new_epochs=220
+epoch=1 loss=2.373147 online_train_accuracy=14.22%
+epoch=20 loss=0.020284 online_train_accuracy=100.00%
+epoch=40 loss=0.006649 online_train_accuracy=100.00%
+epoch=60 loss=0.003800 online_train_accuracy=100.00%
+epoch=80 loss=0.002613 online_train_accuracy=100.00%
+epoch=100 loss=0.001972 online_train_accuracy=100.00%
+epoch=120 loss=0.001575 online_train_accuracy=100.00%
+epoch=140 loss=0.001306 online_train_accuracy=100.00%
+epoch=160 loss=0.001112 online_train_accuracy=100.00%
+epoch=180 loss=0.000967 online_train_accuracy=100.00%
+epoch=200 loss=0.000853 online_train_accuracy=100.00%
+epoch=220 loss=0.000763 online_train_accuracy=100.00%
