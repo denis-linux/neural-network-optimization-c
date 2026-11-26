@@ -1,0 +1,12 @@
+Версия: v0001; предыдущая: нет, случайные веса; эпох: 160
+examples=648 answers=40 previous_epochs=0 new_epochs=160
+epoch=1 loss=3.693554 online_train_accuracy=3.40%
+epoch=20 loss=0.042073 online_train_accuracy=100.00%
+epoch=40 loss=0.012538 online_train_accuracy=100.00%
+epoch=60 loss=0.007050 online_train_accuracy=100.00%
+epoch=80 loss=0.004828 online_train_accuracy=100.00%
+epoch=100 loss=0.003638 online_train_accuracy=100.00%
+epoch=120 loss=0.002904 online_train_accuracy=100.00%
+epoch=140 loss=0.002409 online_train_accuracy=100.00%
+epoch=160 loss=0.002052 online_train_accuracy=100.00%
+Сохранено models/v0001/model.bin. Проверка: bash start_E.sh v0001

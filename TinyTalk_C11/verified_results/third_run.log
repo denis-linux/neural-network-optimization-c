@@ -1,0 +1,6 @@
+Версия: v0003; предыдущая: v0002; эпох: 40
+examples=656 answers=41 previous_epochs=220 new_epochs=40
+epoch=221 loss=0.001642 online_train_accuracy=100.00%
+epoch=240 loss=0.001433 online_train_accuracy=100.00%
+epoch=260 loss=0.001273 online_train_accuracy=100.00%
+Сохранено models/v0003/model.bin. Проверка: bash start_E.sh v0003
