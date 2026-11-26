@@ -1,0 +1,12 @@
+v0.2 local loopback run
+2000 accepted updates, batch 4096, 10000 test examples.
+version=2000 loss=0.05226692 accuracy=0.9950 samples=8192000 rejected=0 payload_bytes=0 seconds=2.381371
+1 worker: version=2000 loss=0.05226692 accuracy=0.9950 samples=8192000 rejected=0 payload_bytes=2112000 seconds=2.892030
+2 workers: version=2000 loss=0.06672967 accuracy=0.9916 samples=8192000 rejected=0 payload_bytes=2112000 seconds=1.592168
+4 workers: version=2000 loss=0.09039930 accuracy=0.9888 samples=8192000 rejected=1 payload_bytes=2113056 seconds=0.937875
+Heterogeneous (0/30ms): version=2000 loss=0.05242698 accuracy=0.9945 samples=8192000 rejected=80 payload_bytes=2196480 seconds=2.733142
+worker completed=2000
+worker completed=81
+UBSan local 100 steps batch 512: exit 0, no diagnostic.
+Compiler flags -Wall -Wextra -Wpedantic -Werror passed.
+Single run; not a statistical benchmark.
