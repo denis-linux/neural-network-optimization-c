@@ -1,0 +1,749 @@
+{
+  "policy": "40 epochs fixed in advance; threshold=max validation coverage at >=90% validation accepted accuracy, min 50 accepted; fixed grid step .001; test not used for selection",
+  "threshold": 0.881,
+  "validation": {
+    "n": 1874,
+    "correct": 1486,
+    "accuracy": 0.7929562433297759,
+    "macro_f1_all_training_classes": 0.754782301871304,
+    "macro_f1_present_classes": 0.7675752222420041,
+    "accepted": 1472,
+    "coverage": 0.7854855923159018,
+    "accepted_accuracy": 0.9001358695652174,
+    "per_class": {
+      "alarm_query": {
+        "support": 19,
+        "precision": 0.9411764705882353,
+        "recall": 0.8421052631578947,
+        "f1": 0.8888888888888888
+      },
+      "alarm_remove": {
+        "support": 13,
+        "precision": 1.0,
+        "recall": 0.9230769230769231,
+        "f1": 0.96
+      },
+      "alarm_set": {
+        "support": 29,
+        "precision": 0.8666666666666667,
+        "recall": 0.896551724137931,
+        "f1": 0.8813559322033898
+      },
+      "audio_volume_down": {
+        "support": 7,
+        "precision": 1.0,
+        "recall": 0.2857142857142857,
+        "f1": 0.4444444444444444
+      },
+      "audio_volume_mute": {
+        "support": 15,
+        "precision": 0.6,
+        "recall": 0.8,
+        "f1": 0.6857142857142857
+      },
+      "audio_volume_other": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0,
+        "f1": 0.0
+      },
+      "audio_volume_up": {
+        "support": 8,
+        "precision": 0.875,
+        "recall": 0.875,
+        "f1": 0.875
+      },
+      "calendar_query": {
+        "support": 96,
+        "precision": 0.6923076923076923,
+        "recall": 0.75,
+        "f1": 0.72
+      },
+      "calendar_remove": {
+        "support": 42,
+        "precision": 0.8260869565217391,
+        "recall": 0.9047619047619048,
+        "f1": 0.8636363636363636
+      },
+      "calendar_set": {
+        "support": 130,
+        "precision": 0.9098360655737705,
+        "recall": 0.8538461538461538,
+        "f1": 0.8809523809523809
+      },
+      "cooking_query": {
+        "support": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "cooking_recipe": {
+        "support": 37,
+        "precision": 0.775,
+        "recall": 0.8378378378378378,
+        "f1": 0.8051948051948052
+      },
+      "datetime_convert": {
+        "support": 9,
+        "precision": 0.875,
+        "recall": 0.7777777777777778,
+        "f1": 0.8235294117647058
+      },
+      "datetime_query": {
+        "support": 52,
+        "precision": 0.7833333333333333,
+        "recall": 0.9038461538461539,
+        "f1": 0.8392857142857143
+      },
+      "email_addcontact": {
+        "support": 5,
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8
+      },
+      "email_query": {
+        "support": 69,
+        "precision": 0.8923076923076924,
+        "recall": 0.8405797101449275,
+        "f1": 0.8656716417910447
+      },
+      "email_querycontact": {
+        "support": 16,
+        "precision": 0.5263157894736842,
+        "recall": 0.625,
+        "f1": 0.5714285714285714
+      },
+      "email_sendemail": {
+        "support": 60,
+        "precision": 0.9090909090909091,
+        "recall": 0.8333333333333334,
+        "f1": 0.8695652173913043
+      },
+      "general_greet": {
+        "support": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "general_joke": {
+        "support": 12,
+        "precision": 0.8181818181818182,
+        "recall": 0.75,
+        "f1": 0.782608695652174
+      },
+      "general_quirky": {
+        "support": 102,
+        "precision": 0.4574468085106383,
+        "recall": 0.4215686274509804,
+        "f1": 0.4387755102040816
+      },
+      "iot_cleaning": {
+        "support": 14,
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.9629629629629629
+      },
+      "iot_coffee": {
+        "support": 8,
+        "precision": 0.875,
+        "recall": 0.875,
+        "f1": 0.875
+      },
+      "iot_hue_lightchange": {
+        "support": 21,
+        "precision": 0.8947368421052632,
+        "recall": 0.8095238095238095,
+        "f1": 0.85
+      },
+      "iot_hue_lightdim": {
+        "support": 14,
+        "precision": 0.9166666666666666,
+        "recall": 0.7857142857142857,
+        "f1": 0.8461538461538461
+      },
+      "iot_hue_lightoff": {
+        "support": 9,
+        "precision": 0.8888888888888888,
+        "recall": 0.8888888888888888,
+        "f1": 0.8888888888888888
+      },
+      "iot_hue_lighton": {
+        "support": 4,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333
+      },
+      "iot_hue_lightup": {
+        "support": 9,
+        "precision": 0.6923076923076923,
+        "recall": 1.0,
+        "f1": 0.8181818181818182
+      },
+      "iot_wemo_off": {
+        "support": 3,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "iot_wemo_on": {
+        "support": 5,
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8
+      },
+      "lists_createoradd": {
+        "support": 22,
+        "precision": 0.8076923076923077,
+        "recall": 0.9545454545454546,
+        "f1": 0.875
+      },
+      "lists_query": {
+        "support": 50,
+        "precision": 0.9555555555555556,
+        "recall": 0.86,
+        "f1": 0.9052631578947369
+      },
+      "lists_remove": {
+        "support": 34,
+        "precision": 0.7692307692307693,
+        "recall": 0.8823529411764706,
+        "f1": 0.821917808219178
+      },
+      "music_dislikeness": {
+        "support": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "music_likeness": {
+        "support": 16,
+        "precision": 0.5714285714285714,
+        "recall": 0.5,
+        "f1": 0.5333333333333333
+      },
+      "music_query": {
+        "support": 27,
+        "precision": 0.8571428571428571,
+        "recall": 0.6666666666666666,
+        "f1": 0.75
+      },
+      "music_settings": {
+        "support": 8,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "news_query": {
+        "support": 81,
+        "precision": 0.7032967032967034,
+        "recall": 0.7901234567901234,
+        "f1": 0.7441860465116279
+      },
+      "play_audiobook": {
+        "support": 32,
+        "precision": 0.8387096774193549,
+        "recall": 0.8125,
+        "f1": 0.8253968253968254
+      },
+      "play_game": {
+        "support": 19,
+        "precision": 0.8947368421052632,
+        "recall": 0.8947368421052632,
+        "f1": 0.8947368421052632
+      },
+      "play_music": {
+        "support": 110,
+        "precision": 0.8521739130434782,
+        "recall": 0.8909090909090909,
+        "f1": 0.8711111111111111
+      },
+      "play_podcasts": {
+        "support": 27,
+        "precision": 0.9565217391304348,
+        "recall": 0.8148148148148148,
+        "f1": 0.88
+      },
+      "play_radio": {
+        "support": 34,
+        "precision": 0.8484848484848485,
+        "recall": 0.8235294117647058,
+        "f1": 0.835820895522388
+      },
+      "qa_currency": {
+        "support": 32,
+        "precision": 0.96875,
+        "recall": 0.96875,
+        "f1": 0.96875
+      },
+      "qa_definition": {
+        "support": 54,
+        "precision": 0.7777777777777778,
+        "recall": 0.7777777777777778,
+        "f1": 0.7777777777777778
+      },
+      "qa_factoid": {
+        "support": 86,
+        "precision": 0.5670103092783505,
+        "recall": 0.6395348837209303,
+        "f1": 0.6010928961748634
+      },
+      "qa_maths": {
+        "support": 13,
+        "precision": 0.75,
+        "recall": 0.46153846153846156,
+        "f1": 0.5714285714285714
+      },
+      "qa_stock": {
+        "support": 24,
+        "precision": 0.7037037037037037,
+        "recall": 0.7916666666666666,
+        "f1": 0.7450980392156863
+      },
+      "recommendation_events": {
+        "support": 26,
+        "precision": 0.6538461538461539,
+        "recall": 0.6538461538461539,
+        "f1": 0.6538461538461539
+      },
+      "recommendation_locations": {
+        "support": 31,
+        "precision": 0.88,
+        "recall": 0.7096774193548387,
+        "f1": 0.7857142857142857
+      },
+      "recommendation_movies": {
+        "support": 12,
+        "precision": 0.6923076923076923,
+        "recall": 0.75,
+        "f1": 0.72
+      },
+      "social_post": {
+        "support": 50,
+        "precision": 0.8269230769230769,
+        "recall": 0.86,
+        "f1": 0.8431372549019608
+      },
+      "social_query": {
+        "support": 18,
+        "precision": 0.8125,
+        "recall": 0.7222222222222222,
+        "f1": 0.7647058823529411
+      },
+      "takeaway_order": {
+        "support": 19,
+        "precision": 0.8421052631578947,
+        "recall": 0.8421052631578947,
+        "f1": 0.8421052631578947
+      },
+      "takeaway_query": {
+        "support": 24,
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1": 0.8333333333333334
+      },
+      "transport_query": {
+        "support": 35,
+        "precision": 0.7894736842105263,
+        "recall": 0.8571428571428571,
+        "f1": 0.821917808219178
+      },
+      "transport_taxi": {
+        "support": 27,
+        "precision": 0.8928571428571429,
+        "recall": 0.9259259259259259,
+        "f1": 0.9090909090909091
+      },
+      "transport_ticket": {
+        "support": 24,
+        "precision": 0.8636363636363636,
+        "recall": 0.7916666666666666,
+        "f1": 0.8260869565217391
+      },
+      "transport_traffic": {
+        "support": 21,
+        "precision": 0.85,
+        "recall": 0.8095238095238095,
+        "f1": 0.8292682926829268
+      },
+      "weather_query": {
+        "support": 105,
+        "precision": 0.9207920792079208,
+        "recall": 0.8857142857142857,
+        "f1": 0.9029126213592233
+      }
+    }
+  },
+  "test": {
+    "n": 2726,
+    "correct": 2131,
+    "accuracy": 0.7817314746881878,
+    "macro_f1_all_training_classes": 0.7376812661903195,
+    "macro_f1_present_classes": 0.75018433849863,
+    "accepted": 2103,
+    "coverage": 0.7714600146735143,
+    "accepted_accuracy": 0.8944365192582026,
+    "per_class": {
+      "alarm_query": {
+        "support": 33,
+        "precision": 0.9032258064516129,
+        "recall": 0.8484848484848485,
+        "f1": 0.875
+      },
+      "alarm_remove": {
+        "support": 21,
+        "precision": 0.85,
+        "recall": 0.8095238095238095,
+        "f1": 0.8292682926829268
+      },
+      "alarm_set": {
+        "support": 33,
+        "precision": 0.7878787878787878,
+        "recall": 0.7878787878787878,
+        "f1": 0.7878787878787878
+      },
+      "audio_volume_down": {
+        "support": 7,
+        "precision": 0.7777777777777778,
+        "recall": 1.0,
+        "f1": 0.875
+      },
+      "audio_volume_mute": {
+        "support": 27,
+        "precision": 0.9130434782608695,
+        "recall": 0.7777777777777778,
+        "f1": 0.84
+      },
+      "audio_volume_other": {
+        "support": 6,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "audio_volume_up": {
+        "support": 11,
+        "precision": 0.875,
+        "recall": 0.6363636363636364,
+        "f1": 0.7368421052631579
+      },
+      "calendar_query": {
+        "support": 121,
+        "precision": 0.6567164179104478,
+        "recall": 0.7272727272727273,
+        "f1": 0.6901960784313725
+      },
+      "calendar_remove": {
+        "support": 58,
+        "precision": 0.7941176470588235,
+        "recall": 0.9310344827586207,
+        "f1": 0.8571428571428571
+      },
+      "calendar_set": {
+        "support": 207,
+        "precision": 0.8817733990147784,
+        "recall": 0.8647342995169082,
+        "f1": 0.8731707317073171
+      },
+      "cooking_query": {
+        "support": 0,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0
+      },
+      "cooking_recipe": {
+        "support": 69,
+        "precision": 0.8305084745762712,
+        "recall": 0.7101449275362319,
+        "f1": 0.765625
+      },
+      "datetime_convert": {
+        "support": 15,
+        "precision": 0.6923076923076923,
+        "recall": 0.6,
+        "f1": 0.6428571428571429
+      },
+      "datetime_query": {
+        "support": 79,
+        "precision": 0.8717948717948718,
+        "recall": 0.8607594936708861,
+        "f1": 0.8662420382165605
+      },
+      "email_addcontact": {
+        "support": 11,
+        "precision": 0.46153846153846156,
+        "recall": 0.5454545454545454,
+        "f1": 0.5
+      },
+      "email_query": {
+        "support": 110,
+        "precision": 0.8807339449541285,
+        "recall": 0.8727272727272727,
+        "f1": 0.8767123287671232
+      },
+      "email_querycontact": {
+        "support": 26,
+        "precision": 0.6666666666666666,
+        "recall": 0.7692307692307693,
+        "f1": 0.7142857142857143
+      },
+      "email_sendemail": {
+        "support": 111,
+        "precision": 0.8796296296296297,
+        "recall": 0.8558558558558559,
+        "f1": 0.867579908675799
+      },
+      "general_greet": {
+        "support": 1,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.3333333333333333
+      },
+      "general_joke": {
+        "support": 17,
+        "precision": 0.8235294117647058,
+        "recall": 0.8235294117647058,
+        "f1": 0.8235294117647058
+      },
+      "general_quirky": {
+        "support": 165,
+        "precision": 0.46107784431137727,
+        "recall": 0.4666666666666667,
+        "f1": 0.463855421686747
+      },
+      "iot_cleaning": {
+        "support": 14,
+        "precision": 0.9090909090909091,
+        "recall": 0.7142857142857143,
+        "f1": 0.8
+      },
+      "iot_coffee": {
+        "support": 26,
+        "precision": 0.9583333333333334,
+        "recall": 0.8846153846153846,
+        "f1": 0.92
+      },
+      "iot_hue_lightchange": {
+        "support": 34,
+        "precision": 0.725,
+        "recall": 0.8529411764705882,
+        "f1": 0.7837837837837838
+      },
+      "iot_hue_lightdim": {
+        "support": 16,
+        "precision": 0.8333333333333334,
+        "recall": 0.625,
+        "f1": 0.7142857142857143
+      },
+      "iot_hue_lightoff": {
+        "support": 22,
+        "precision": 0.9047619047619048,
+        "recall": 0.8636363636363636,
+        "f1": 0.8837209302325582
+      },
+      "iot_hue_lighton": {
+        "support": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "iot_hue_lightup": {
+        "support": 23,
+        "precision": 0.8260869565217391,
+        "recall": 0.8260869565217391,
+        "f1": 0.8260869565217391
+      },
+      "iot_wemo_off": {
+        "support": 11,
+        "precision": 1.0,
+        "recall": 0.7272727272727273,
+        "f1": 0.8421052631578947
+      },
+      "iot_wemo_on": {
+        "support": 3,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666
+      },
+      "lists_createoradd": {
+        "support": 36,
+        "precision": 0.7804878048780488,
+        "recall": 0.8888888888888888,
+        "f1": 0.8311688311688312
+      },
+      "lists_query": {
+        "support": 50,
+        "precision": 0.8837209302325582,
+        "recall": 0.76,
+        "f1": 0.8172043010752689
+      },
+      "lists_remove": {
+        "support": 43,
+        "precision": 0.7954545454545454,
+        "recall": 0.813953488372093,
+        "f1": 0.8045977011494253
+      },
+      "music_dislikeness": {
+        "support": 4,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "music_likeness": {
+        "support": 34,
+        "precision": 0.6857142857142857,
+        "recall": 0.7058823529411765,
+        "f1": 0.6956521739130435
+      },
+      "music_query": {
+        "support": 30,
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1": 0.7777777777777778
+      },
+      "music_settings": {
+        "support": 6,
+        "precision": 0.6666666666666666,
+        "recall": 0.3333333333333333,
+        "f1": 0.4444444444444444
+      },
+      "news_query": {
+        "support": 115,
+        "precision": 0.7904761904761904,
+        "recall": 0.7217391304347827,
+        "f1": 0.7545454545454545
+      },
+      "play_audiobook": {
+        "support": 40,
+        "precision": 0.8157894736842105,
+        "recall": 0.775,
+        "f1": 0.7948717948717948
+      },
+      "play_game": {
+        "support": 29,
+        "precision": 0.9583333333333334,
+        "recall": 0.7931034482758621,
+        "f1": 0.8679245283018868
+      },
+      "play_music": {
+        "support": 158,
+        "precision": 0.85,
+        "recall": 0.8607594936708861,
+        "f1": 0.8553459119496856
+      },
+      "play_podcasts": {
+        "support": 56,
+        "precision": 0.8983050847457628,
+        "recall": 0.9464285714285714,
+        "f1": 0.9217391304347826
+      },
+      "play_radio": {
+        "support": 60,
+        "precision": 0.7746478873239436,
+        "recall": 0.9166666666666666,
+        "f1": 0.8396946564885496
+      },
+      "qa_currency": {
+        "support": 38,
+        "precision": 0.9696969696969697,
+        "recall": 0.8421052631578947,
+        "f1": 0.9014084507042254
+      },
+      "qa_definition": {
+        "support": 57,
+        "precision": 0.8461538461538461,
+        "recall": 0.7719298245614035,
+        "f1": 0.8073394495412844
+      },
+      "qa_factoid": {
+        "support": 137,
+        "precision": 0.5802469135802469,
+        "recall": 0.6861313868613139,
+        "f1": 0.6287625418060201
+      },
+      "qa_maths": {
+        "support": 22,
+        "precision": 0.8571428571428571,
+        "recall": 0.8181818181818182,
+        "f1": 0.8372093023255814
+      },
+      "qa_stock": {
+        "support": 25,
+        "precision": 0.6451612903225806,
+        "recall": 0.8,
+        "f1": 0.7142857142857143
+      },
+      "recommendation_events": {
+        "support": 42,
+        "precision": 0.7619047619047619,
+        "recall": 0.7619047619047619,
+        "f1": 0.7619047619047619
+      },
+      "recommendation_locations": {
+        "support": 30,
+        "precision": 0.8333333333333334,
+        "recall": 0.6666666666666666,
+        "f1": 0.7407407407407407
+      },
+      "recommendation_movies": {
+        "support": 20,
+        "precision": 0.631578947368421,
+        "recall": 0.6,
+        "f1": 0.6153846153846154
+      },
+      "social_post": {
+        "support": 81,
+        "precision": 0.8611111111111112,
+        "recall": 0.7654320987654321,
+        "f1": 0.8104575163398693
+      },
+      "social_query": {
+        "support": 25,
+        "precision": 0.68,
+        "recall": 0.68,
+        "f1": 0.68
+      },
+      "takeaway_order": {
+        "support": 21,
+        "precision": 0.68,
+        "recall": 0.8095238095238095,
+        "f1": 0.7391304347826086
+      },
+      "takeaway_query": {
+        "support": 35,
+        "precision": 0.9285714285714286,
+        "recall": 0.7428571428571429,
+        "f1": 0.8253968253968254
+      },
+      "transport_query": {
+        "support": 51,
+        "precision": 0.75,
+        "recall": 0.7647058823529411,
+        "f1": 0.7572815533980582
+      },
+      "transport_taxi": {
+        "support": 21,
+        "precision": 0.9047619047619048,
+        "recall": 0.9047619047619048,
+        "f1": 0.9047619047619048
+      },
+      "transport_ticket": {
+        "support": 35,
+        "precision": 0.9393939393939394,
+        "recall": 0.8857142857142857,
+        "f1": 0.9117647058823529
+      },
+      "transport_traffic": {
+        "support": 14,
+        "precision": 0.5,
+        "recall": 0.8571428571428571,
+        "f1": 0.631578947368421
+      },
+      "weather_query": {
+        "support": 131,
+        "precision": 0.841726618705036,
+        "recall": 0.8931297709923665,
+        "f1": 0.8666666666666667
+      }
+    }
+  },
+  "majority_baseline_test": 0.07593543653705062
+}

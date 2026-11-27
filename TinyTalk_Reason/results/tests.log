@@ -73,7 +73,7 @@ PASS | сколько осталось | REMAINING | Осталось 2222 кк�
 PASS | нет было 111 | CORRECTED | Исправлено: 123 -> 111 ккал.
 PASS | сколько осталось | REMAINING | Осталось 2234 ккал.
 PASS | /reset | RESET | Память разговора очищена.
-RESULT 75/75; CPU 0.000733 s; sizeof(State)=22984 bytes; sizeof(Model)=445648 bytes
+RESULT 75/75; CPU 0.000648 s; sizeof(State)=22984 bytes; sizeof(Model)=445648 bytes
 PASS | сколько еще можно съесть
   expected: remaining
   actual:   remaining

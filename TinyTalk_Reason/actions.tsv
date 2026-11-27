@@ -1,0 +1,61 @@
+# intent<TAB>human-authored task description; no executable code
+alarm_query	посмотреть существующие будильники
+alarm_remove	удалить выбранный будильник
+alarm_set	установить будильник, уточнив дату и время
+audio_volume_down	уменьшить громкость
+audio_volume_mute	выключить звук
+audio_volume_other	уточнить требуемую настройку громкости
+audio_volume_up	увеличить громкость
+calendar_query	посмотреть события календаря
+calendar_remove	удалить выбранное событие календаря
+calendar_set	добавить событие в календарь
+cooking_query	ответить на вопрос о приготовлении еды
+cooking_recipe	подобрать рецепт
+datetime_convert	перевести время между часовыми поясами
+datetime_query	сообщить дату или время
+email_addcontact	добавить контакт для электронной почты
+email_query	проверить электронную почту
+email_querycontact	найти контакт для электронной почты
+email_sendemail	подготовить письмо, уточнив адресата и текст
+general_greet	ответить на приветствие
+general_joke	рассказать шутку
+general_quirky	уточнить смысл общего разговорного запроса
+iot_cleaning	запустить уборку выбранным устройством
+iot_coffee	приготовить кофе выбранным устройством
+iot_hue_lightchange	изменить цвет освещения
+iot_hue_lightdim	приглушить освещение
+iot_hue_lightoff	выключить освещение
+iot_hue_lighton	включить освещение
+iot_hue_lightup	увеличить яркость освещения
+iot_wemo_off	выключить выбранную умную розетку
+iot_wemo_on	включить выбранную умную розетку
+lists_createoradd	создать список или добавить пункт
+lists_query	показать содержимое списка
+lists_remove	удалить пункт или список
+music_dislikeness	отметить, что музыка не нравится
+music_likeness	отметить, что музыка нравится
+music_query	сообщить информацию о музыке
+music_settings	изменить настройки воспроизведения музыки
+news_query	показать новости
+play_audiobook	воспроизвести аудиокнигу
+play_game	запустить игру
+play_music	воспроизвести музыку
+play_podcasts	воспроизвести подкаст
+play_radio	включить радио
+qa_currency	рассчитать обмен валют
+qa_definition	объяснить значение понятия
+qa_factoid	ответить на фактологический вопрос
+qa_maths	выполнить математический расчёт
+qa_stock	сообщить сведения о котировках
+recommendation_events	порекомендовать мероприятие
+recommendation_locations	порекомендовать место
+recommendation_movies	порекомендовать фильм
+social_post	подготовить публикацию в социальной сети
+social_query	проверить сообщения или публикации в социальной сети
+takeaway_order	подготовить заказ еды
+takeaway_query	уточнить сведения о доставке еды
+transport_query	сообщить сведения о транспорте
+transport_taxi	подготовить заказ такси
+transport_ticket	подобрать транспортный билет
+transport_traffic	сообщить дорожную обстановку
+weather_query	сообщить прогноз погоды

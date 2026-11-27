@@ -29,6 +29,27 @@ static void say(Reply *r,const char *code,const char *fmt,...){
  va_list a;va_start(a,fmt);vsnprintf(r->answer,sizeof r->answer,fmt,a);va_end(a);
 }
 static void proof(Reply *r,const char *fmt,...){va_list a;va_start(a,fmt);vsnprintf(r->proof,sizeof r->proof,fmt,a);va_end(a);}
+/* Human-authored descriptions of the actually selected rule, not introspection. */
+static void explain(const Reply *r){
+ const char *task="уточнить запрос; подтверждённого действия нет";
+ struct {const char *code,*task;} map[]={
+ {"GOAL","задать цель питания"},{"MEAL","добавить приём пищи"},
+ {"CORRECTED","исправить прежнее значение без добавления события"},
+ {"REMAINING","вычесть сумму приёмов пищи из цели"},{"TOTAL","сложить записанные калории"},
+ {"ASK_DURATION","уточнить длительность перед созданием таймера"},
+ {"TIMER","записать учебный таймер; системного запуска нет"},
+ {"CANCELLED","отменить выбранную операцию или запись"},
+ {"FACT","сохранить факт владения объектом"},{"TRANSFER","обновить владельца объекта"},
+ {"OWNER","сообщить владельца по памяти разговора"},
+ {"CONFLICT","остановить изменение: обнаружено противоречие"},
+ {"NEGATED","сохранить состояние: действие отрицается"},
+ {"RESET","очистить память диалога"},{"STATE","показать состояние диалога"},
+ {"MISSING_GOAL","уточнить цель питания"},{"UNKNOWN_FACT","запросить отсутствующий факт"},
+ {"HELLO","ответить на приветствие"}};
+ for(size_t i=0;i<sizeof map/sizeof map[0];i++)if(!strcmp(r->code,map[i].code)){task=map[i].task;break;}
+ printf("Разбор: %s.\nТребуемая операция: %s.\n",r->code,task);
+ if(*r->proof)printf("Основание: %s\n",r->proof);
+}
 /* Restricted UTF-8 normalizer. Reject malformed, oversized and control input.
  * Russian/ASCII lowercase, yo->e; retain digits/punctuation for exact parsing. */
 static int normalize(const char *s,char *out,size_t cap){
@@ -171,12 +192,12 @@ static void respond(Model *m,State *s,const char *input,Reply *r,int trace){
 #define main reason_program_main
 #endif
 int main(int argc,char **argv){
- if(argc<2){fprintf(stderr,"Usage: reason MODEL [--batch] [--trace] [--rules-only] | --test TESTS\n");return 2;}
- Model *m=alloc(sizeof *m);checkpoint(m,argv[1],0);State s={0};int trace=0,batch=0,fail=0,count=0;
+ if(argc<2){fprintf(stderr,"Usage: reason MODEL [--batch] [--trace] [--explain] [--rules-only] | --test TESTS\n");return 2;}
+ Model *m=alloc(sizeof *m);checkpoint(m,argv[1],0);State s={0};int trace=0,batch=0,explain_on=0,fail=0,count=0;
  FILE *in=stdin;int testing=argc==4&&!strcmp(argv[2],"--test");
  if(testing){in=fopen(argv[3],"r");if(!in)die(argv[3]);}
- else for(int i=2;i<argc;i++){if(!strcmp(argv[i],"--trace"))trace=1;else if(!strcmp(argv[i],"--batch"))batch=1;else if(!strcmp(argv[i],"--rules-only"))rules_only=1;else die("неизвестный аргумент");}
- if(!testing&&!batch)puts("TinyTalk Reason 1.0 | /reset /state /quit | Введите сообщение.");
+ else for(int i=2;i<argc;i++){if(!strcmp(argv[i],"--trace"))trace=1;else if(!strcmp(argv[i],"--batch"))batch=1;else if(!strcmp(argv[i],"--explain"))explain_on=1;else if(!strcmp(argv[i],"--rules-only"))rules_only=1;else die("неизвестный аргумент");}
+ if(!testing&&!batch)puts("TinyTalk Reason 1.1 | /reset /state /quit | Введите сообщение.");
  char line[LINE];clock_t start=clock();
  while(fgets(line,sizeof line,in)){
   if(!strchr(line,'\n')&&!feof(in)){int ch;while((ch=fgetc(in))!='\n'&&ch!=EOF){}puts("INVALID | Строка слишком длинная.");if(testing)fail++;continue;}
@@ -186,6 +207,7 @@ int main(int argc,char **argv){
   Reply r;respond(m,&s,line,&r,trace);count++;
   if(testing){int ok=!strcmp(expected,r.code)&&(!snippet||strstr(r.answer,snippet));fail+=!ok;printf("%s | %s | %s | %s\n",ok?"PASS":"FAIL",line,r.code,r.answer);}
   else printf("%s | %s\n",r.code,r.answer);
+  if(explain_on)explain(&r);
   if(trace&&*r.proof)fprintf(stderr,"[Основание] %s\n",r.proof);
  }
  if(testing){printf("RESULT %d/%d; CPU %.6f s; sizeof(State)=%zu bytes; sizeof(Model)=%zu bytes\n",count-fail,count,(double)(clock()-start)/CLOCKS_PER_SEC,sizeof s,sizeof *m);fclose(in);}

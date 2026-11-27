@@ -1,0 +1,4 @@
+examples=11000 answers=60 previous_epochs=0 new_epochs=40
+epoch=1 loss=2.549454 online_train_accuracy=38.75%
+epoch=20 loss=0.017015 online_train_accuracy=99.86%
+epoch=40 loss=0.004694 online_train_accuracy=100.00%

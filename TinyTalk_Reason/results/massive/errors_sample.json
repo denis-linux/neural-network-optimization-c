@@ -1,0 +1,182 @@
+[
+  {
+    "text": "розовый это то что нам надо",
+    "expected": "iot_hue_lightchange",
+    "predicted": "email_sendemail",
+    "score": 0.729368091
+  },
+  {
+    "text": "и опустилась темнота",
+    "expected": "iot_hue_lighton",
+    "predicted": "play_music",
+    "score": 0.654960394
+  },
+  {
+    "text": "здесь слишком грязно приберись",
+    "expected": "iot_cleaning",
+    "predicted": "audio_volume_down",
+    "score": 0.568449199
+  },
+  {
+    "text": "хочу узнать статус яркости моего экрана",
+    "expected": "general_quirky",
+    "predicted": "social_post",
+    "score": 0.978550911
+  },
+  {
+    "text": "пошлите мне смешок",
+    "expected": "general_joke",
+    "predicted": "general_quirky",
+    "score": 0.770030499
+  },
+  {
+    "text": "установить подъём в семь утра в четверг",
+    "expected": "alarm_set",
+    "predicted": "calendar_set",
+    "score": 0.424170941
+  },
+  {
+    "text": "убрать будильник который я только что поставил",
+    "expected": "alarm_remove",
+    "predicted": "alarm_query",
+    "score": 0.827887893
+  },
+  {
+    "text": "я тебя не слышу",
+    "expected": "audio_volume_up",
+    "predicted": "general_quirky",
+    "score": 0.744089961
+  },
+  {
+    "text": "какой курс обмена американского доллара к фунту стерлингов",
+    "expected": "news_query",
+    "predicted": "qa_currency",
+    "score": 0.999395132
+  },
+  {
+    "text": "зажги свет на кухне",
+    "expected": "iot_hue_lighton",
+    "predicted": "iot_hue_lightdim",
+    "score": 0.948308945
+  },
+  {
+    "text": "пожалуйста помолчи еще час",
+    "expected": "audio_volume_mute",
+    "predicted": "datetime_query",
+    "score": 0.636175752
+  },
+  {
+    "text": "ягода малинка",
+    "expected": "play_music",
+    "predicted": "weather_query",
+    "score": 0.698839903
+  },
+  {
+    "text": "какие сенсации в российской газете",
+    "expected": "news_query",
+    "predicted": "transport_traffic",
+    "score": 0.301965177
+  },
+  {
+    "text": "открой папку космонавтов нет",
+    "expected": "play_music",
+    "predicted": "play_audiobook",
+    "score": 0.186372548
+  },
+  {
+    "text": "покажи мне последнюю цену акций costco",
+    "expected": "news_query",
+    "predicted": "qa_stock",
+    "score": 0.999987006
+  },
+  {
+    "text": "поменяй свет на более приглушённый",
+    "expected": "iot_hue_lightdim",
+    "predicted": "iot_hue_lightchange",
+    "score": 0.897236168
+  },
+  {
+    "text": "какие ошибки ты обычно совершаешь",
+    "expected": "general_quirky",
+    "predicted": "qa_stock",
+    "score": 0.689496458
+  },
+  {
+    "text": "получить оценки",
+    "expected": "weather_query",
+    "predicted": "cooking_recipe",
+    "score": 0.749649465
+  },
+  {
+    "text": "приготовить заказ как можно скорее",
+    "expected": "takeaway_query",
+    "predicted": "cooking_recipe",
+    "score": 0.674954355
+  },
+  {
+    "text": "можешь ли ты понизить освещение",
+    "expected": "iot_hue_lightdim",
+    "predicted": "iot_hue_lightchange",
+    "score": 0.930571735
+  },
+  {
+    "text": "информируй меня о том какая цена биткоина",
+    "expected": "news_query",
+    "predicted": "qa_stock",
+    "score": 0.550617397
+  },
+  {
+    "text": "я хочу узнать об этой песне",
+    "expected": "music_query",
+    "predicted": "music_likeness",
+    "score": 0.949005485
+  },
+  {
+    "text": "настройки будильника",
+    "expected": "alarm_query",
+    "predicted": "alarm_set",
+    "score": 0.806511521
+  },
+  {
+    "text": "открой приложение folder пожалуйста",
+    "expected": "takeaway_order",
+    "predicted": "transport_taxi",
+    "score": 0.713887513
+  },
+  {
+    "text": "мне нужно выплакаться можешь сыграть мне грустные рок песни",
+    "expected": "play_music",
+    "predicted": "music_likeness",
+    "score": 0.970018685
+  },
+  {
+    "text": "где настройка громкости",
+    "expected": "audio_volume_other",
+    "predicted": "qa_factoid",
+    "score": 0.759739935
+  },
+  {
+    "text": "сделай свет поярче в коридоре",
+    "expected": "iot_hue_lightup",
+    "predicted": "iot_hue_lightchange",
+    "score": 0.614937186
+  },
+  {
+    "text": "не играй рок метал",
+    "expected": "music_dislikeness",
+    "predicted": "play_music",
+    "score": 0.994958997
+  },
+  {
+    "text": "дружественный интрефейс",
+    "expected": "news_query",
+    "predicted": "qa_factoid",
+    "score": 0.593547344
+  },
+  {
+    "text": "есть ли что-то особенное в политике",
+    "expected": "news_query",
+    "predicted": "recommendation_events",
+    "score": 0.668121934
+  }
+]

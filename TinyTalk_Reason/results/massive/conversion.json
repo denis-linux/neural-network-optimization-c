@@ -1,0 +1,25 @@
+{
+  "format": "massive",
+  "source_sha256": "af7367861ea21c1d69a084b290145815f7eaf82dcdc43b7ab572b993f9b2a69d",
+  "policy": "official split; remove repeated NFKC/lower/yo/whitespace text in order train,validation,test; no shuffle across splits",
+  "splits": {
+    "train": {
+      "source": 11514,
+      "kept": 11000,
+      "duplicates_removed": 514,
+      "classes": 60
+    },
+    "validation": {
+      "source": 2033,
+      "kept": 1874,
+      "duplicates_removed": 159,
+      "classes": 59
+    },
+    "test": {
+      "source": 2974,
+      "kept": 2726,
+      "duplicates_removed": 248,
+      "classes": 59
+    }
+  }
+}
